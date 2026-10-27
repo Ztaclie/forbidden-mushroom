@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>FM_Plant_Ragecap</defName>
+    <label>ragecap</label>
+    <description>A tall, flared mushroom the color of old blood. Its flesh is dense with something that makes the heart pound just from handling it.</description>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/FM_Ragecap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Things/Plant/FM_Ragecap_Immature</immatureGraphicPath>
+      <fertilityMin>0.3</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+      <dieIfLeafless>true</dieIfLeafless>
+      <neverBlightable>true</neverBlightable>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>FM_Ragecap</harvestedThingDef>
+      <harvestYield>6</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>FM_CombatFungi</li>
+      </sowResearchPrerequisites>
+      <topWindExposure>0.05</topWindExposure>
+      <growDays>8</growDays>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Misc</purpose>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>FM_Plant_Ironhide</defName>
+    <label>ironhide cap</label>
+    <description>A squat, plated mushroom with a hard gray cap, like a shield grown from the ground.</description>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/FM_Ironhide</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Things/Plant/FM_Ironhide_Immature</immatureGraphicPath>
+      <fertilityMin>0.3</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+      <dieIfLeafless>true</dieIfLeafless>
+      <neverBlightable>true</neverBlightable>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>FM_Ironhide</harvestedThingDef>
+      <harvestYield>6</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>FM_CombatFungi</li>
+      </sowResearchPrerequisites>
+      <topWindExposure>0.05</topWindExposure>
+      <growDays>12</growDays>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Misc</purpose>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>FM_Plant_Ghostcap</defName>
+    <label>ghostcap</label>
+    <description>A pale, almost translucent mushroom on a thin stalk. It seems to flicker when you are not looking at it.</description>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/FM_Ghostcap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Things/Plant/FM_Ghostcap_Immature</immatureGraphicPath>
+      <fertilityMin>0.3</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+      <dieIfLeafless>true</dieIfLeafless>
+      <neverBlightable>true</neverBlightable>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>FM_Ghostcap</harvestedThingDef>
+      <harvestYield>6</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>FM_CombatFungi</li>
+      </sowResearchPrerequisites>
+      <topWindExposure>0.05</topWindExposure>
+      <growDays>10</growDays>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Misc</purpose>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>FM_Plant_MendersBonnet</defName>
+    <label>mender's bonnet</label>
+    <description>A warm honey-colored bonnet speckled with green. It smells faintly of antiseptic.</description>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/FM_MendersBonnet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Things/Plant/FM_MendersBonnet_Immature</immatureGraphicPath>
+      <fertilityMin>0.3</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+      <dieIfLeafless>true</dieIfLeafless>
+      <neverBlightable>true</neverBlightable>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>FM_MendersBonnet</harvestedThingDef>
+      <harvestYield>6</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>FM_RestorativeFungi</li>
+      </sowResearchPrerequisites>
+      <topWindExposure>0.05</topWindExposure>
+      <growDays>9</growDays>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Misc</purpose>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>FM_Plant_Nightcap</defName>
+    <label>nightcap</label>
+    <description>A drooping indigo mushroom flecked with pale spots like stars. It opens only in the dark.</description>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/FM_Nightcap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Things/Plant/FM_Nightcap_Immature</immatureGraphicPath>
+      <fertilityMin>0.3</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+      <dieIfLeafless>true</dieIfLeafless>
+      <neverBlightable>true</neverBlightable>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>FM_Nightcap</harvestedThingDef>
+      <harvestYield>6</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>FM_RestorativeFungi</li>
+      </sowResearchPrerequisites>
+      <topWindExposure>0.05</topWindExposure>
+      <growDays>8</growDays>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Misc</purpose>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>FM_Plant_Hollowcap</defName>
+    <label>hollowcap</label>
+    <description>A narrow ochre mushroom with a hollow hole through the cap. Anyone who eats it stops feeling hungry for a while.</description>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/FM_Hollowcap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Things/Plant/FM_Hollowcap_Immature</immatureGraphicPath>
+      <fertilityMin>0.3</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+      <dieIfLeafless>true</dieIfLeafless>
+      <neverBlightable>true</neverBlightable>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>FM_Hollowcap</harvestedThingDef>
+      <harvestYield>6</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>FM_RestorativeFungi</li>
+      </sowResearchPrerequisites>
+      <topWindExposure>0.05</topWindExposure>
+      <growDays>7</growDays>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Misc</purpose>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>FM_Plant_Dreamcap</defName>
+    <label>dreamcap</label>
+    <description>A round violet mushroom with pale dots, like a small dream you almost remember.</description>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/FM_Dreamcap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Things/Plant/FM_Dreamcap_Immature</immatureGraphicPath>
+      <fertilityMin>0.3</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+      <dieIfLeafless>true</dieIfLeafless>
+      <neverBlightable>true</neverBlightable>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>FM_Dreamcap</harvestedThingDef>
+      <harvestYield>6</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>FM_CognitiveFungi</li>
+      </sowResearchPrerequisites>
+      <topWindExposure>0.05</topWindExposure>
+      <growDays>10</growDays>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Misc</purpose>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>FM_Plant_Sagecap</defName>
+    <label>sagecap</label>
+    <description>A tall teal mushroom with fine lines on its cap, like pages of a book. Those who eat it feel unusually focused.</description>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/FM_Sagecap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Things/Plant/FM_Sagecap_Immature</immatureGraphicPath>
+      <fertilityMin>0.3</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+      <dieIfLeafless>true</dieIfLeafless>
+      <neverBlightable>true</neverBlightable>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>FM_Sagecap</harvestedThingDef>
+      <harvestYield>6</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>FM_CognitiveFungi</li>
+      </sowResearchPrerequisites>
+      <topWindExposure>0.05</topWindExposure>
+      <growDays>9</growDays>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Misc</purpose>
+    </plant>
+  </ThingDef>
+
+</Defs>
