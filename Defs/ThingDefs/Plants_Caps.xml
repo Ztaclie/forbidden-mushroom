@@ -329,4 +329,86 @@
     </plant>
   </ThingDef>
 
+  <ThingDef ParentName="PlantBase">
+    <defName>FM_Plant_Rotcap</defName>
+    <label>rotcap</label>
+    <description>A sickly green-black mushroom that smells of a cellar. Its cap is pitted and weeping orange spores. It gives enormous strength to whoever eats it, and takes something back.</description>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/FM_Rotcap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Things/Plant/FM_Rotcap_Immature</immatureGraphicPath>
+      <fertilityMin>0.3</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+      <dieIfLeafless>true</dieIfLeafless>
+      <neverBlightable>true</neverBlightable>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>FM_Rotcap</harvestedThingDef>
+      <harvestYield>6</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>FM_ForbiddenFungi</li>
+      </sowResearchPrerequisites>
+      <topWindExposure>0.05</topWindExposure>
+      <growDays>14</growDays>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Misc</purpose>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>FM_Plant_Whispercap</defName>
+    <label>whisper cap</label>
+    <description>A pale gray mushroom with a swirling, ear-shaped cap. Nearby people swear they hear soft voices that agree with everything they say.</description>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/FM_Whispercap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Things/Plant/FM_Whispercap_Immature</immatureGraphicPath>
+      <fertilityMin>0.3</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+      <dieIfLeafless>true</dieIfLeafless>
+      <neverBlightable>true</neverBlightable>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>FM_Whispercap</harvestedThingDef>
+      <harvestYield>6</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>FM_ForbiddenFungi</li>
+      </sowResearchPrerequisites>
+      <topWindExposure>0.05</topWindExposure>
+      <growDays>12</growDays>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Misc</purpose>
+    </plant>
+  </ThingDef>
+
 </Defs>

@@ -685,6 +685,180 @@
     </comps>
   </ThingDef>
 
+  <ThingDef ParentName="DrugPillBase">
+    <defName>FM_Rotcap</defName>
+    <label>rotcap</label>
+    <description>A raw rotcap. Eating it gives huge strength and speed and almost no pain, but the fungus keeps growing inside the user. The rot gets worse until it is tended, and left alone it kills.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_Rotcap_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>5</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_Rotcap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>18</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_Rotcap_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_RotcapRot</hediffDef>
+          <severity>0.05</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>2016</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>FM_RotcapRefined</defName>
+    <label>refined rotcap</label>
+    <description>A raw rotcap. This refined cap has been steeped in shroom broth, which removes the downside: rot that grows inside the user until tended, and kills if left alone.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_RotcapRefined_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>5</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_RotcapRefined</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>54</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_RotcapRefined_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>FM_RefinedForbidden</researchPrerequisite>
+      <workSkill>Cooking</workSkill>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
+      </recipeUsers>
+      <displayPriority>2017</displayPriority>
+    </recipeMaker>
+    <costList>
+      <FM_Rotcap>1</FM_Rotcap>
+      <FM_ShroomMeat>5</FM_ShroomMeat>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>2017</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="DrugPillBase">
+    <defName>FM_Whispercap</defName>
+    <label>whisper cap</label>
+    <description>A raw whisper cap. Eating it brings a rush of joy and makes the user charming and easy to talk to, but the voices fade into a dark mood with a chance of berserk rage.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_Whispercap_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>5</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_Whispercap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>16</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Social</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_Whispercap_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>2018</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>FM_WhispercapRefined</defName>
+    <label>refined whisper cap</label>
+    <description>A raw whisper cap. This refined cap has been steeped in shroom broth, which removes the downside: a dark mood afterwards with a chance of berserk rage.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_WhispercapRefined_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>5</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_WhispercapRefined</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>48</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Social</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_WhispercapRefined_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>FM_RefinedForbidden</researchPrerequisite>
+      <workSkill>Cooking</workSkill>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
+      </recipeUsers>
+      <displayPriority>2019</displayPriority>
+    </recipeMaker>
+    <costList>
+      <FM_Whispercap>1</FM_Whispercap>
+      <FM_ShroomMeat>5</FM_ShroomMeat>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>2019</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
   <ThingDef ParentName="MakeableDrugPillBase">
     <defName>FM_CombatPackage</defName>
     <label>combat package</label>
@@ -732,7 +906,7 @@
         <li>FueledStove</li>
         <li>ElectricStove</li>
       </recipeUsers>
-      <displayPriority>2016</displayPriority>
+      <displayPriority>2020</displayPriority>
     </recipeMaker>
     <costList>
       <FM_Ragecap>1</FM_Ragecap>
@@ -741,7 +915,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
-        <listOrder>2016</listOrder>
+        <listOrder>2020</listOrder>
       </li>
     </comps>
   </ThingDef>
@@ -793,7 +967,7 @@
         <li>FueledStove</li>
         <li>ElectricStove</li>
       </recipeUsers>
-      <displayPriority>2017</displayPriority>
+      <displayPriority>2021</displayPriority>
     </recipeMaker>
     <costList>
       <FM_RagecapRefined>1</FM_RagecapRefined>
@@ -802,7 +976,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
-        <listOrder>2017</listOrder>
+        <listOrder>2021</listOrder>
       </li>
     </comps>
   </ThingDef>
@@ -854,7 +1028,7 @@
         <li>FueledStove</li>
         <li>ElectricStove</li>
       </recipeUsers>
-      <displayPriority>2018</displayPriority>
+      <displayPriority>2022</displayPriority>
     </recipeMaker>
     <costList>
       <FM_MendersBonnet>1</FM_MendersBonnet>
@@ -863,7 +1037,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
-        <listOrder>2018</listOrder>
+        <listOrder>2022</listOrder>
       </li>
     </comps>
   </ThingDef>
@@ -915,7 +1089,7 @@
         <li>FueledStove</li>
         <li>ElectricStove</li>
       </recipeUsers>
-      <displayPriority>2019</displayPriority>
+      <displayPriority>2023</displayPriority>
     </recipeMaker>
     <costList>
       <FM_MendersBonnetRefined>1</FM_MendersBonnetRefined>
@@ -924,7 +1098,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
-        <listOrder>2019</listOrder>
+        <listOrder>2023</listOrder>
       </li>
     </comps>
   </ThingDef>
@@ -971,7 +1145,7 @@
         <li>FueledStove</li>
         <li>ElectricStove</li>
       </recipeUsers>
-      <displayPriority>2020</displayPriority>
+      <displayPriority>2024</displayPriority>
     </recipeMaker>
     <costList>
       <FM_Dreamcap>1</FM_Dreamcap>
@@ -979,7 +1153,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
-        <listOrder>2020</listOrder>
+        <listOrder>2024</listOrder>
       </li>
     </comps>
   </ThingDef>
@@ -1026,7 +1200,7 @@
         <li>FueledStove</li>
         <li>ElectricStove</li>
       </recipeUsers>
-      <displayPriority>2021</displayPriority>
+      <displayPriority>2025</displayPriority>
     </recipeMaker>
     <costList>
       <FM_DreamcapRefined>1</FM_DreamcapRefined>
@@ -1034,7 +1208,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
-        <listOrder>2021</listOrder>
+        <listOrder>2025</listOrder>
       </li>
     </comps>
   </ThingDef>
