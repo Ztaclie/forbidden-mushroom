@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Meat shroom flesh already falls under the raw food category, but these traders now stock it
+       on purpose. success=Always keeps the log clean if a trader kind is missing or renamed. -->
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/TraderKindDef[defName="Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FM_ShroomMeat</thingDef>
+        <countRange>30~90</countRange>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/TraderKindDef[defName="Orbital_BulkGoods"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FM_ShroomMeat</thingDef>
+        <countRange>30~90</countRange>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/TraderKindDef[defName="Base_Outlander_Standard"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FM_ShroomMeat</thingDef>
+        <countRange>20~60</countRange>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/TraderKindDef[defName="Caravan_Neolithic_BulkGoods"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FM_ShroomMeat</thingDef>
+        <countRange>20~60</countRange>
+      </li>
+    </value>
+  </Operation>
+
+</Patch>
