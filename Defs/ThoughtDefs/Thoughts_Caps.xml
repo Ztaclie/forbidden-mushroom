@@ -36,4 +36,39 @@
     </stages>
   </ThoughtDef>
 
+  <ThoughtDef>
+    <defName>FM_Whisper</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>FM_Whispercap_High</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>whisper cap silence</label>
+        <description>The voices stopped. I want to hurt something.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>whisper cap voices</label>
+        <description>They all love me. Everything is wonderful.</description>
+        <baseMoodEffect>14</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FM_WhisperRefined</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>FM_WhispercapRefined_High</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>refined whisper cap voices</label>
+        <description>They all love me. Everything is wonderful.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
 </Defs>

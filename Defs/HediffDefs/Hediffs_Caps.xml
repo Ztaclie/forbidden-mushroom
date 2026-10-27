@@ -544,4 +544,224 @@
     </stages>
   </HediffDef>
 
+  <HediffDef>
+    <defName>FM_Rotcap_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>rotcap fury</label>
+    <labelNoun>a rotcap fury</labelNoun>
+    <description>Savage strength from rotcap. Far faster, almost no pain, and blows hit much harder.</description>
+    <defaultLabelColor>(0.45,0.6,0.25)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.000</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>active</label>
+        <minSeverity>0</minSeverity>
+        <painFactor>0.2</painFactor>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.5</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <MeleeHitChance>5</MeleeHitChance>
+        </statOffsets>
+        <statFactors>
+          <MeleeDamageFactor>1.5</MeleeDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_RotcapRefined_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>refined rotcap fury</label>
+    <labelNoun>a refined rotcap fury</labelNoun>
+    <description>Savage strength from rotcap. Far faster, almost no pain, and blows hit much harder. This refined form has no downside.</description>
+    <defaultLabelColor>(0.45,0.6,0.25)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.000</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>active</label>
+        <minSeverity>0</minSeverity>
+        <painFactor>0.4</painFactor>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.3</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <MeleeHitChance>3</MeleeHitChance>
+        </statOffsets>
+        <statFactors>
+          <MeleeDamageFactor>1.3</MeleeDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_Whispercap_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>whispering</label>
+    <labelNoun>a whispering</labelNoun>
+    <description>Soft voices from whisper cap. A wonderful mood and a silver tongue.</description>
+    <defaultLabelColor>(0.75,0.7,0.9)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.667</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>silence</label>
+        <minSeverity>0</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.9</postFactor>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Berserk</mentalState>
+            <mtbDays>2.5</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+      <li>
+        <label>active</label>
+        <minSeverity>0.4</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Talking</capacity>
+            <offset>0.3</offset>
+          </li>
+        </capMods>
+        <statFactors>
+          <SocialImpact>1.5</SocialImpact>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_WhispercapRefined_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>refined whispering</label>
+    <labelNoun>a refined whispering</labelNoun>
+    <description>Soft voices from whisper cap. A wonderful mood and a silver tongue. This refined form has no downside.</description>
+    <defaultLabelColor>(0.75,0.7,0.9)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.667</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>active</label>
+        <minSeverity>0</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Talking</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+        <statFactors>
+          <SocialImpact>1.3</SocialImpact>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_RotcapRot</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>rotcap rot</label>
+    <labelNoun>rotcap rot</labelNoun>
+    <description>Rotcap fungus is growing inside the body and eating it from within. It spreads steadily until it is tended, and is fatal if left alone.</description>
+    <defaultLabelColor>(0.5,0.6,0.2)</defaultLabelColor>
+    <makesSickThought>true</makesSickThought>
+    <tendable>true</tendable>
+    <initialSeverity>0.05</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <lethalSeverity>1.0</lethalSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.25</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>24</baseTendDurationHours>
+        <severityPerDayTended>-0.2</severityPerDayTended>
+        <disappearsAtTotalTendQuality>1.5</disappearsAtTotalTendQuality>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>early</label>
+        <minSeverity>0</minSeverity>
+        <painOffset>0.05</painOffset>
+        <hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+      </li>
+      <li>
+        <label>spreading</label>
+        <minSeverity>0.4</minSeverity>
+        <painOffset>0.2</painOffset>
+        <hungerRateFactorOffset>0.6</hungerRateFactorOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.85</postFactor>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.85</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>advanced</label>
+        <minSeverity>0.7</minSeverity>
+        <painOffset>0.4</painOffset>
+        <hungerRateFactorOffset>1</hungerRateFactorOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.6</postFactor>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.6</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
 </Defs>
