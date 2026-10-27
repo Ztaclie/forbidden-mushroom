@@ -43,6 +43,7 @@
       <tasteThought>AteRawFood</tasteThought>
       <ingestEffect>EatMeat</ingestEffect>
       <ingestSound>RawMeat_Eat</ingestSound>
+      <specialThoughtAsIngredient>FM_AteShroomMeatInMeal</specialThoughtAsIngredient>
     </ingestible>
     <comps>
       <li Class="CompProperties_Forbiddable" />

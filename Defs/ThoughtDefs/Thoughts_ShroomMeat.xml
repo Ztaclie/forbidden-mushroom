@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Applied when a meal is cooked with meat shroom flesh. -->
+  <ThoughtDef>
+    <defName>FM_AteShroomMeatInMeal</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>0.5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>ate meat shroom flesh</label>
+        <description>It had a rich, earthy, savory flavor. Tasted like meat, only a little stranger.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>
