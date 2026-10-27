@@ -16,6 +16,8 @@ A RimWorld mod that adds the **Meat Shroom**, a fungus that grows meat. Farm it 
 - Stack-size sprites: the flesh shows one chunk, a small pile or a big pile depending on stack size.
 - Meals cooked with the flesh give a small mood boost (+2 for half a day).
 - Animal feed: carnivores and omnivores eat it as raw meat (same preference as vanilla meat), and it can be made into kibble.
+- **Mycelium snare**: a hidden trap (Security tab) built from 30 meat shroom flesh, no research needed. When triggered it plants mycelium binds in a ~3 tile radius that slow movement and, with several binds, down the victim so it can be captured alive.
+- Entangled victims get hungry much faster (+0.4 hunger rate per bind). Binds fade with time or are cut away by tending.
 - Works with other mods that add soil or terrain, such as Tilled Soil.
 
 ### Planned
@@ -43,7 +45,18 @@ Ideas for later phases, not promised yet:
 | Category | | Raw meat (`MeatRaw`) |
 | Mood | | +2 for 0.5 days in meals |
 
-Numbers are a first pass and will be rebalanced in later phases.
+### Mycelium snare
+
+| Stat | Value |
+| --- | --- |
+| Def name | `FM_MyceliumSnare` |
+| Cost | 30 meat shroom flesh |
+| Radius | 2.9 tiles |
+| Movement per bind | x0.25 (stacks multiplicatively) |
+| Hunger per bind | +0.4 rate (stacks additively) |
+| Uses | Single use |
+
+Numbers are a first pass and will be rebalanced in later phases. The snare is untested in-game so far.
 
 ## Compatibility
 
@@ -62,8 +75,8 @@ Layout:
 
 ```
 About/        mod metadata (About.xml, Preview.png when added)
-Defs/         plant, item and thought definitions
-Textures/     plant, immature plant and flesh sprites (stack sprites in a folder)
+Defs/         plant, item, trap, hediff, damage and thought definitions
+Textures/     plant, flesh (stack sprites in a folder) and trap sprites
 ```
 
 Testing: copy the mod into `RimWorld/Mods/`, enable it, start a dev-mode game and sow the Meat Shroom. Def changes need a full game restart.
