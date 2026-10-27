@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>FM_Plant_ForbiddenMushroom</defName>
+    <label>meat shroom</label>
+    <description>A pale, fleshy mushroom that should not exist. Its flesh is dense, fibrous and unmistakably meat-like, and nobody is quite sure what it feeds on. It grows in ordinary soil and does not need light.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.25</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/FM_ForbiddenMushroom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Things/Plant/FM_ForbiddenMushroom_Immature</immatureGraphicPath>
+      <fertilityMin>0.3</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+      <dieIfLeafless>true</dieIfLeafless>
+      <neverBlightable>true</neverBlightable>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>FM_ShroomMeat</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.05</topWindExposure>
+      <growDays>7</growDays>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Forbidden Mushroom</name>
+  <author>melmeh42</author>
+  <packageId>melmeh42.forbiddenmushroom</packageId>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <description>Adds the Forbidden Mushroom: a strange, fleshy fungus that grows in any soil (and in the dark) and yields meat shroom flesh.\n\nMeat shroom flesh is a raw meat. Every cooking recipe that accepts meat (simple meals, fine meals, lavish meals, kibble, pemmican...) accepts it, so you get a meat supply without a single animal.\n\nPhase 1 features:\n- Meat Shroom plant: sowable in grow zones and hydroponics, grows without light\n- Meat shroom flesh: raw meat resource, usable in all meat recipes\n\nMore phases coming.</description>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+  </loadAfter>
+</ModMetaData>
