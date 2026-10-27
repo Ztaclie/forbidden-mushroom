@@ -6,34 +6,19 @@ A RimWorld mod that adds the **Meat Shroom**, a fungus that grows meat. Farm it 
 
 ## Features
 
-### Implemented (Phase 1)
-
-- **Meat Shroom plant**: sow it in grow zones and in hydroponics basins.
-- Grows without light, so it works in sealed, unlit rooms.
-- **Meat shroom flesh**: a raw meat item in the vanilla `MeatRaw` category.
-- Accepted by every recipe that takes meat, including simple, fine and lavish meals, kibble and pemmican.
-- No research needed. It is available from the start of the game.
-- Stack-size sprites: the flesh shows one chunk, a small pile or a big pile depending on stack size.
-- Meals cooked with the flesh give a small mood boost (+2 for half a day).
-- Animal feed: carnivores and omnivores eat it as raw meat (same preference as vanilla meat), and it can be made into kibble.
-- **Mycelium snare**: a one-tile hidden trap (Security tab) built from 15 meat shroom flesh, no research needed. Like the spike trap it can be placed next to other traps. When stepped on it roots the victim in mycelium, which downs them so they can be captured alive.
-- Entangled victims get hungry much faster (+1.0 hunger rate per bind). Binds fade with time or are cut away by tending.
-- Works with other mods that add soil or terrain, such as Tilled Soil.
-
-### Planned
-
-Ideas for later phases, not promised yet:
-
-- Research unlock and a growing-station building
-- Natural spawning in caves and other biomes
-- New meals that use the flesh
-- Real art for the plant and flesh
+- **Meat Shroom plant**: sow it in grow zones and in hydroponics basins. It grows without light, so it works in sealed, unlit rooms.
+- **Meat shroom flesh**: a raw meat item in the vanilla `MeatRaw` category. Every recipe that takes meat accepts it, including simple, fine and lavish meals, kibble and pemmican.
+- **Mood**: meals cooked with the flesh give a small mood boost (+2 for half a day).
+- **Animal feed**: carnivores and omnivores eat it as raw meat, with the same preference as vanilla meat.
+- **Trade**: outlander, tribal and orbital bulk goods traders and outlander base traders stock the flesh, and traders that deal in raw food buy it from you.
+- **Mycelium snare**: a one-tile hidden trap (Security tab) built from 15 meat shroom flesh. Like the spike trap it can be placed next to other traps. When stepped on it roots the victim in mycelium, which downs them so they can be captured alive.
+- Entangled victims get hungry much faster. Mycelium binds fade with time or are cut away by tending.
+- No research needed. Everything is available from the start of the game.
 
 ## Stats
 
 | | Meat Shroom (plant) | Meat shroom flesh (item) |
 | --- | --- | --- |
-| Def name | `FM_Plant_ForbiddenMushroom` | `FM_ShroomMeat` |
 | Sow on | Ground, hydroponics | |
 | Light needed | None | |
 | Grow time | 7 days | |
@@ -49,41 +34,19 @@ Ideas for later phases, not promised yet:
 
 | Stat | Value |
 | --- | --- |
-| Def name | `FM_MyceliumSnare` |
 | Cost | 15 meat shroom flesh |
 | Area | 1 tile (can be placed adjacent to other traps) |
 | Movement per bind | x0.1, which downs the victim (stacks multiplicatively) |
 | Hunger per bind | +1.0 rate (stacks additively) |
 | Uses | Single use |
 
-Numbers are a first pass and will be rebalanced in later phases. The snare is untested in-game so far.
-
 ## Compatibility
 
-- Adds new defs only (`FM_` prefix) and patches no vanilla defs, so it should be safe to add or remove mid-save. Remove it only after harvesting or deleting the plants and flesh.
+- Adds new content only, with an `FM_` prefix on every name. The only change to existing content is adding the flesh to some trader stock lists.
+- Safe to add mid-save. To remove it, first harvest or delete the plants, flesh and snares.
 - Load after Core. No other load-order requirements.
-- Checked against the Tilled Soil source files, which have no overlap. Its fertility of 99 makes the Meat Shroom grow noticeably faster.
-- Version folders are not used yet. If RimWorld 1.6 is supported later, defs that differ go in `1.6/` and `1.7/` with a `LoadFolders.xml`.
+- Works with mods that add soil or terrain, such as Tilled Soil. Very high fertility makes the Meat Shroom grow faster.
 
 ## Installation
 
-Subscribe on the Steam Workshop (link coming), or copy this folder into `RimWorld/Mods/` and enable it in the Mods menu.
-
-## Development
-
-Layout:
-
-```
-About/        mod metadata (About.xml, Preview.png when added)
-Defs/         plant, item, trap, hediff, damage and thought definitions
-Textures/     plant, flesh (stack sprites in a folder) and trap sprites
-```
-
-Testing: copy the mod into `RimWorld/Mods/`, enable it, start a dev-mode game and sow the Meat Shroom. Def changes need a full game restart.
-
-### Steam Workshop checklist
-
-- [ ] Replace placeholder textures in `Textures/`
-- [ ] Add `About/Preview.png` (640x360)
-- [ ] Add a mod icon
-- [ ] Upload from the in-game Mods menu
+Subscribe on the Steam Workshop, or copy this folder into `RimWorld/Mods/` and enable it in the Mods menu.
