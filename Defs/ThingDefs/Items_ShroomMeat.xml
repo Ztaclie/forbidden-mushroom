@@ -32,7 +32,7 @@
     </statBases>
     <graphicData>
       <texPath>Things/Item/Resource/FM_ShroomMeat</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <thingCategories>
       <li>MeatRaw</li>
