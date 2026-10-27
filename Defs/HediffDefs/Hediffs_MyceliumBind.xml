@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Wound-type hediff applied by the mycelium snare. Heals on its own, or is cut away by tending.
+       Hunger uses an additive offset so several binds on one pawn stack linearly. -->
+  <HediffDef ParentName="InjuryBase">
+    <defName>FM_MyceliumBind</defName>
+    <label>mycelium bind</label>
+    <labelNoun>a mycelium bind</labelNoun>
+    <labelNounPretty>mycelium bind on {1}</labelNounPretty>
+    <description>Pale fungal threads have grown into and around this part, rooting it in place and feeding on the host. Tending cuts the threads away.</description>
+    <defaultLabelColor>(0.85, 0.5, 0.65)</defaultLabelColor>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>cut free</labelTendedWell>
+        <labelTendedWellInner>cut free</labelTendedWellInner>
+        <labelSolidTendedWell>cut free</labelSolidTendedWell>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.005</painPerSeverity>
+      <bleedRate>0</bleedRate>
+      <averagePainPerSeverityPermanent>0</averagePainPerSeverityPermanent>
+      <destroyedLabel>Consumed</destroyedLabel>
+      <alwaysUseDestroyedLabel>true</alwaysUseDestroyedLabel>
+    </injuryProps>
+    <stages>
+      <li>
+        <label>entangled</label>
+        <becomeVisible>true</becomeVisible>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.25</postFactor>
+          </li>
+        </capMods>
+        <hungerRateFactorOffset>0.4</hungerRateFactorOffset>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>
