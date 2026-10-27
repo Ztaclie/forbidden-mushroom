@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Forbidden Mushroom</name>
-  <author>melmeh42</author>
-  <packageId>melmeh42.forbiddenmushroom</packageId>
+  <author>ztac</author>
+  <packageId>ztac.forbiddenmushroom</packageId>
+  <modVersion>1.0.0</modVersion>
   <supportedVersions>
     <li>1.7</li>
   </supportedVersions>
-  <description>Adds the Forbidden Mushroom: a strange, fleshy fungus that grows in any soil (and in the dark) and yields meat shroom flesh.\n\nMeat shroom flesh is a raw meat. Every cooking recipe that accepts meat (simple meals, fine meals, lavish meals, kibble, pemmican...) accepts it, so you get a meat supply without a single animal.\n\nPhase 1 features:\n- Meat Shroom plant: sowable in grow zones and hydroponics, grows without light\n- Meat shroom flesh: raw meat resource, usable in all meat recipes\n\nMore phases coming.</description>
+  <description>Adds the Meat Shroom, a fungus that grows meat, and a family of forbidden mushrooms with powerful effects.\n\nMEAT SHROOM\nFarm it in any soil or in the dark. Its flesh is a raw meat that every cooking recipe accepts, so you get a meat supply without a single animal. Meals made with it give a small mood boost, animals eat it, and traders stock and buy it.\n\nMYCELIUM SNARE\nA one-tile hidden trap built from meat shroom flesh. It roots the victim in mycelium, which downs them for capture and makes them starve much faster.\n\nCAPS (Mycology research tab)\nTen sibling mushrooms that give temporary effects when eaten: ragecap, ironhide cap, ghostcap, mender's bonnet, nightcap, hollowcap, dreamcap, sagecap, and the dangerous rotcap and whisper cap. Each has a downside.\n\nREFINED CAPS AND PACKAGES\nResearch lets you steep caps in shroom broth to remove their downsides, and bundle each group's caps into a single package that applies every effect at once.\n\nNo other mods required. Safe to add to an existing save.</description>
   <loadAfter>
     <li>Ludeon.RimWorld</li>
   </loadAfter>
