@@ -13,6 +13,9 @@ A RimWorld mod that adds the **Meat Shroom**, a fungus that grows meat. Farm it 
 - **Meat shroom flesh**: a raw meat item in the vanilla `MeatRaw` category.
 - Accepted by every recipe that takes meat, including simple, fine and lavish meals, kibble and pemmican.
 - No research needed. It is available from the start of the game.
+- Stack-size sprites: the flesh shows one chunk, a small pile or a big pile depending on stack size.
+- Meals cooked with the flesh give a small mood boost (+2 for half a day).
+- Animal feed: carnivores and omnivores eat it as raw meat (same preference as vanilla meat), and it can be made into kibble.
 - Works with other mods that add soil or terrain, such as Tilled Soil.
 
 ### Planned
@@ -22,7 +25,7 @@ Ideas for later phases, not promised yet:
 - Research unlock and a growing-station building
 - Natural spawning in caves and other biomes
 - New meals that use the flesh
-- Real art and stack-size sprites for the flesh
+- Real art for the plant and flesh
 
 ## Stats
 
@@ -38,6 +41,7 @@ Ideas for later phases, not promised yet:
 | Market value | | 1.2 |
 | Stack size | | 75 |
 | Category | | Raw meat (`MeatRaw`) |
+| Mood | | +2 for 0.5 days in meals |
 
 Numbers are a first pass and will be rebalanced in later phases.
 
@@ -58,8 +62,8 @@ Layout:
 
 ```
 About/        mod metadata (About.xml, Preview.png when added)
-Defs/         plant and item definitions
-Textures/     plant, immature plant and flesh sprites
+Defs/         plant, item and thought definitions
+Textures/     plant, immature plant and flesh sprites (stack sprites in a folder)
 ```
 
 Testing: copy the mod into `RimWorld/Mods/`, enable it, start a dev-mode game and sow the Meat Shroom. Def changes need a full game restart.
