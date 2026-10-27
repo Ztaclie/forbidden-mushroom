@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>FM_DreamcapHaze</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>FM_Dreamcap_High</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>dreamcap comedown</label>
+        <description>The dream is fading and everything feels gray.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+      <li>
+        <label>dreamcap haze</label>
+        <description>Everything feels soft and far away and fine.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FM_DreamcapHazeRefined</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>FM_DreamcapRefined_High</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>refined dreamcap haze</label>
+        <description>Everything feels soft and far away and fine.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

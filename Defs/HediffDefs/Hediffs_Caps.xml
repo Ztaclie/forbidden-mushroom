@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Raw caps have the downside; refined caps (researched per group) have only the benefit. -->
+
+  <HediffDef>
+    <defName>FM_Ragecap_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>ragecap rush</label>
+    <labelNoun>a ragecap rush</labelNoun>
+    <description>A surge of fury from ragecap. Pain is dulled, movement is faster and melee blows hit harder.</description>
+    <defaultLabelColor>(0.85,0.2,0.25)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.000</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>crash</label>
+        <minSeverity>0</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.75</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.8</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>active</label>
+        <minSeverity>0.3</minSeverity>
+        <painFactor>0.4</painFactor>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.3</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <MeleeHitChance>3</MeleeHitChance>
+        </statOffsets>
+        <statFactors>
+          <MeleeDamageFactor>1.25</MeleeDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_RagecapRefined_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>refined ragecap rush</label>
+    <labelNoun>a refined ragecap rush</labelNoun>
+    <description>A surge of fury from ragecap. Pain is dulled, movement is faster and melee blows hit harder. This refined form has no downside.</description>
+    <defaultLabelColor>(0.85,0.2,0.25)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.000</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>active</label>
+        <minSeverity>0</minSeverity>
+        <painFactor>0.4</painFactor>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.3</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <MeleeHitChance>3</MeleeHitChance>
+        </statOffsets>
+        <statFactors>
+          <MeleeDamageFactor>1.25</MeleeDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_Ironhide_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>ironhide skin</label>
+    <labelNoun>a ironhide skin</labelNoun>
+    <description>Skin hardened into armor-like plates by ironhide cap. Resists sharp and blunt damage.</description>
+    <defaultLabelColor>(0.5,0.55,0.62)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.000</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>active</label>
+        <minSeverity>0</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.85</postFactor>
+          </li>
+        </capMods>
+        <statOffsets>
+          <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+        </statOffsets>
+        <statFactors>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_IronhideRefined_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>refined ironhide skin</label>
+    <labelNoun>a refined ironhide skin</labelNoun>
+    <description>Skin hardened into armor-like plates by ironhide cap. Resists sharp and blunt damage. This refined form has no downside.</description>
+    <defaultLabelColor>(0.5,0.55,0.62)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.000</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>active</label>
+        <minSeverity>0</minSeverity>
+        <statOffsets>
+          <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_Ghostcap_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>ghostcap lightness</label>
+    <labelNoun>a ghostcap lightness</labelNoun>
+    <description>A feeling of weightlessness from ghostcap. Quicker and much harder to hit in melee.</description>
+    <defaultLabelColor>(0.7,0.85,0.95)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.000</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>active</label>
+        <minSeverity>0</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.1</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.8</postFactor>
+          </li>
+        </capMods>
+        <statOffsets>
+          <MeleeDodgeChance>10</MeleeDodgeChance>
+        </statOffsets>
+        <statFactors>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_GhostcapRefined_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>refined ghostcap lightness</label>
+    <labelNoun>a refined ghostcap lightness</labelNoun>
+    <description>A feeling of weightlessness from ghostcap. Quicker and much harder to hit in melee. This refined form has no downside.</description>
+    <defaultLabelColor>(0.7,0.85,0.95)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.000</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>active</label>
+        <minSeverity>0</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <MeleeDodgeChance>10</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_MendersBonnet_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>mending</label>
+    <labelNoun>a mending</labelNoun>
+    <description>The body is knitting itself back together under mender's bonnet. Wounds heal and immunity builds faster.</description>
+    <defaultLabelColor>(0.95,0.7,0.2)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.667</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>active</label>
+        <minSeverity>0</minSeverity>
+        <hungerRateFactor>1.6</hungerRateFactor>
+        <statOffsets>
+        </statOffsets>
+        <statFactors>
+          <InjuryHealingFactor>2</InjuryHealingFactor>
+          <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_MendersBonnetRefined_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>refined mending</label>
+    <labelNoun>a refined mending</labelNoun>
+    <description>The body is knitting itself back together under mender's bonnet. Wounds heal and immunity builds faster. This refined form has no downside.</description>
+    <defaultLabelColor>(0.95,0.7,0.2)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.667</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>active</label>
+        <minSeverity>0</minSeverity>
+        <statFactors>
+          <InjuryHealingFactor>2</InjuryHealingFactor>
+          <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_Nightcap_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>nightcap calm</label>
+    <labelNoun>a nightcap calm</labelNoun>
+    <description>Deep calm from nightcap. Rest is restored faster and tiredness builds more slowly.</description>
+    <defaultLabelColor>(0.3,0.3,0.6)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.000</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>groggy</label>
+        <minSeverity>0</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.85</postFactor>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.85</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>active</label>
+        <minSeverity>0.3</minSeverity>
+        <statFactors>
+          <RestRateMultiplier>2</RestRateMultiplier>
+          <RestFallRateFactor>0.6</RestFallRateFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_NightcapRefined_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>refined nightcap calm</label>
+    <labelNoun>a refined nightcap calm</labelNoun>
+    <description>Deep calm from nightcap. Rest is restored faster and tiredness builds more slowly. This refined form has no downside.</description>
+    <defaultLabelColor>(0.3,0.3,0.6)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.000</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>active</label>
+        <minSeverity>0</minSeverity>
+        <statFactors>
+          <RestRateMultiplier>2</RestRateMultiplier>
+          <RestFallRateFactor>0.6</RestFallRateFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_Hollowcap_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>hollowcap emptiness</label>
+    <labelNoun>a hollowcap emptiness</labelNoun>
+    <description>An odd emptiness from hollowcap. Hunger barely registers, though thinking is a little slower.</description>
+    <defaultLabelColor>(0.7,0.55,0.3)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.667</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>ravenous crash</label>
+        <minSeverity>0</minSeverity>
+        <hungerRateFactor>2</hungerRateFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.7</postFactor>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.8</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>active</label>
+        <minSeverity>0.3</minSeverity>
+        <hungerRateFactor>0.25</hungerRateFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.9</postFactor>
+          </li>
+        </capMods>
+        <statOffsets>
+        </statOffsets>
+        <statFactors>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_HollowcapRefined_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>refined hollowcap emptiness</label>
+    <labelNoun>a refined hollowcap emptiness</labelNoun>
+    <description>An odd emptiness from hollowcap. Hunger barely registers, though thinking is a little slower. This refined form has no downside.</description>
+    <defaultLabelColor>(0.7,0.55,0.3)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.667</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>active</label>
+        <minSeverity>0</minSeverity>
+        <hungerRateFactor>0.25</hungerRateFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_Dreamcap_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>dreamcap haze</label>
+    <labelNoun>a dreamcap haze</labelNoun>
+    <description>A pleasant haze from dreamcap. Pain is dulled and the mind drifts.</description>
+    <defaultLabelColor>(0.6,0.4,0.8)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.000</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>comedown</label>
+        <minSeverity>0</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.9</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>active</label>
+        <minSeverity>0.3</minSeverity>
+        <painFactor>0.6</painFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_DreamcapRefined_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>refined dreamcap haze</label>
+    <labelNoun>a refined dreamcap haze</labelNoun>
+    <description>A pleasant haze from dreamcap. Pain is dulled and the mind drifts. This refined form has no downside.</description>
+    <defaultLabelColor>(0.6,0.4,0.8)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.000</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>active</label>
+        <minSeverity>0</minSeverity>
+        <painFactor>0.6</painFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_Sagecap_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>sagecap clarity</label>
+    <labelNoun>a sagecap clarity</labelNoun>
+    <description>Sharp clarity from sagecap. Research and learning go faster.</description>
+    <defaultLabelColor>(0.2,0.65,0.6)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.000</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>headache</label>
+        <minSeverity>0</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.8</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>active</label>
+        <minSeverity>0.3</minSeverity>
+        <statOffsets>
+        </statOffsets>
+        <statFactors>
+          <ResearchSpeed>1.35</ResearchSpeed>
+          <GlobalLearningFactor>1.3</GlobalLearningFactor>
+          <RestFallRateFactor>1.5</RestFallRateFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FM_SagecapRefined_High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>refined sagecap clarity</label>
+    <labelNoun>a refined sagecap clarity</labelNoun>
+    <description>Sharp clarity from sagecap. Research and learning go faster. This refined form has no downside.</description>
+    <defaultLabelColor>(0.2,0.65,0.6)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.000</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>active</label>
+        <minSeverity>0</minSeverity>
+        <statFactors>
+          <ResearchSpeed>1.35</ResearchSpeed>
+          <GlobalLearningFactor>1.3</GlobalLearningFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>
