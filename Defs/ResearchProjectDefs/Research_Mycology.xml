@@ -103,4 +103,33 @@
     <researchViewY>3</researchViewY>
   </ResearchProjectDef>
 
+  <ResearchProjectDef>
+    <defName>FM_ForbiddenFungi</defName>
+    <label>forbidden fungi</label>
+    <description>Grow rotcap and whisper cap, two dangerous mushrooms with enormous power and enormous costs. Requires mastery of refined combat and cognitive fungi.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>FM_RefinedCombat</li>
+      <li>FM_RefinedCognitive</li>
+    </prerequisites>
+    <tab>FM_Mycology</tab>
+    <researchViewX>3</researchViewX>
+    <researchViewY>1.5</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>FM_RefinedForbidden</defName>
+    <label>refined forbidden fungi</label>
+    <description>Steep rotcap and whisper cap in shroom broth. The rot and the berserk rage are gone, but so is some of the raw power.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>FM_ForbiddenFungi</li>
+    </prerequisites>
+    <tab>FM_Mycology</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>1.5</researchViewY>
+  </ResearchProjectDef>
+
 </Defs>
