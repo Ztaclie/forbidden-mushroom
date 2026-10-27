@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchTabDef>
+    <defName>FM_Mycology</defName>
+    <label>Mycology</label>
+    <generalTitle>Mycology research projects</generalTitle>
+    <generalDescription>Study the forbidden mushrooms: how to grow them, how to prepare them, and how to remove their downsides.</generalDescription>
+  </ResearchTabDef>
+
+  <ResearchProjectDef>
+    <defName>FM_Mycology</defName>
+    <label>mycology</label>
+    <description>Study the forbidden fungi. Unlocks the three branches of cap cultivation.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>FM_Mycology</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>1.5</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>FM_CombatFungi</defName>
+    <label>combat fungi</label>
+    <description>Grow ragecap, ironhide cap and ghostcap, and bundle them into combat packages.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>FM_Mycology</li>
+    </prerequisites>
+    <tab>FM_Mycology</tab>
+    <researchViewX>1</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>FM_RefinedCombat</defName>
+    <label>refined combat fungi</label>
+    <description>Steep ragecap, ironhide cap and ghostcap in shroom broth to remove their downsides, in single caps or refined combat packages.</description>
+    <baseCost>900</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>FM_CombatFungi</li>
+    </prerequisites>
+    <tab>FM_Mycology</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>FM_RestorativeFungi</defName>
+    <label>restorative fungi</label>
+    <description>Grow mender's bonnet, nightcap and hollowcap, and bundle them into recovery packages.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>FM_Mycology</li>
+    </prerequisites>
+    <tab>FM_Mycology</tab>
+    <researchViewX>1</researchViewX>
+    <researchViewY>1.5</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>FM_RefinedRestorative</defName>
+    <label>refined restorative fungi</label>
+    <description>Steep mender's bonnet, nightcap and hollowcap in shroom broth to remove their downsides, in single caps or refined recovery packages.</description>
+    <baseCost>900</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>FM_RestorativeFungi</li>
+    </prerequisites>
+    <tab>FM_Mycology</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1.5</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>FM_CognitiveFungi</defName>
+    <label>cognitive fungi</label>
+    <description>Grow dreamcap and sagecap, and bundle them into mind packages.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>FM_Mycology</li>
+    </prerequisites>
+    <tab>FM_Mycology</tab>
+    <researchViewX>1</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>FM_RefinedCognitive</defName>
+    <label>refined cognitive fungi</label>
+    <description>Steep dreamcap and sagecap in shroom broth to remove their downsides, in single caps or refined mind packages.</description>
+    <baseCost>900</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>FM_CognitiveFungi</li>
+    </prerequisites>
+    <tab>FM_Mycology</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>
