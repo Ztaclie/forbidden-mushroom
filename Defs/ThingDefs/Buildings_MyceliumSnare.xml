@@ -5,24 +5,24 @@
   <ThingDef ParentName="TrapIEDBase">
     <defName>FM_MyceliumSnare</defName>
     <label>mycelium snare</label>
-    <description>A burst-bulb of dormant mycelium hidden in the ground. When something steps on it, it blooms into a web of pale threads that root into the victim, slowing and then immobilizing it while the fungus drinks its strength. Entangled victims go hungry much faster. The threads can be cut away by tending, or fade with time. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+    <description>A burst-bulb of dormant mycelium hidden in the ground. When something steps on it, it blooms into a web of pale threads that root into the victim and immobilize it while the fungus drinks its strength. Entangled victims go hungry much faster. The threads can be cut away by tending, or fade with time. Covers a single tile, so it can be laid shoulder to shoulder with other traps. Animals can sense these when calm.</description>
     <graphicData>
       <texPath>Things/Building/Security/FM_MyceliumSnare</texPath>
     </graphicData>
     <uiOrder>43</uiOrder>
     <researchPrerequisites Inherit="False" />
+    <placeWorkers Inherit="False" />
     <costList>
-      <FM_ShroomMeat>30</FM_ShroomMeat>
+      <FM_ShroomMeat>15</FM_ShroomMeat>
     </costList>
     <comps>
       <li Class="CompProperties_Explosive">
-        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveRadius>0.5</explosiveRadius>
         <explosiveDamageType>FM_MyceliumSnare</explosiveDamageType>
         <damageAmountBase>8</damageAmountBase>
         <wickTicks>5</wickTicks>
       </li>
     </comps>
-    <specialDisplayRadius>2.9</specialDisplayRadius>
   </ThingDef>
 
 </Defs>

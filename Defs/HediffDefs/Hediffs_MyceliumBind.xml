@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- Wound-type hediff applied by the mycelium snare. Heals on its own, or is cut away by tending.
-       Hunger uses an additive offset so several binds on one pawn stack linearly. -->
+       One bind downs the victim. Hunger uses an additive offset so extra binds stack linearly. -->
   <HediffDef ParentName="InjuryBase">
     <defName>FM_MyceliumBind</defName>
     <label>mycelium bind</label>
@@ -31,10 +31,10 @@
         <capMods>
           <li>
             <capacity>Moving</capacity>
-            <postFactor>0.25</postFactor>
+            <postFactor>0.1</postFactor>
           </li>
         </capMods>
-        <hungerRateFactorOffset>0.4</hungerRateFactorOffset>
+        <hungerRateFactorOffset>1</hungerRateFactorOffset>
       </li>
     </stages>
   </HediffDef>
