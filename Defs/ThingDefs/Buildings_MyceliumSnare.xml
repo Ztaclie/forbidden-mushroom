@@ -5,7 +5,7 @@
   <ThingDef ParentName="TrapIEDBase">
     <defName>FM_MyceliumSnare</defName>
     <label>mycelium snare</label>
-    <description>A burst-bulb of dormant mycelium hidden in the ground. When something steps on it, it blooms into a web of pale threads that root into the victim and immobilize it while the fungus drinks its strength. Entangled victims go hungry much faster. The threads can be cut away by tending, or fade with time. Covers a single tile, so it can be laid shoulder to shoulder with other traps. Animals can sense these when calm.</description>
+    <description>A tightly coiled, thorned vine of dormant mycelium hidden in the ground. When something steps on it, the vine whips out and its thorns root pale threads into the victim and immobilize it while the fungus drinks its strength. Entangled victims go hungry much faster. The threads can be cut away by tending, or fade with time. Covers a single tile, so it can be laid shoulder to shoulder with other traps. Animals can sense these when calm.</description>
     <graphicData>
       <texPath>Things/Building/Security/FM_MyceliumSnare</texPath>
     </graphicData>
