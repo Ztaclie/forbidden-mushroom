@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="DrugPillBase">
+    <defName>FM_Toilcap</defName>
+    <label>toilcap</label>
+    <description>A raw toilcap. Eating it makes the user work faster at everything, but burns food and tires the body quickly.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_Toilcap_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>5</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_Toilcap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>9</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_Toilcap_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>3000</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>FM_ToilcapRefined</defName>
+    <label>refined toilcap</label>
+    <description>A raw toilcap. This refined cap has been steeped in shroom broth, which removes the downside: a much higher hunger rate and faster tiredness.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_ToilcapRefined_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>5</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_ToilcapRefined</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>27</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_ToilcapRefined_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>FM_RefinedLabor</researchPrerequisite>
+      <workSkill>Cooking</workSkill>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
+      </recipeUsers>
+      <displayPriority>3001</displayPriority>
+    </recipeMaker>
+    <costList>
+      <FM_Toilcap>1</FM_Toilcap>
+      <FM_ShroomMeat>5</FM_ShroomMeat>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>3001</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="DrugPillBase">
+    <defName>FM_Greencap</defName>
+    <label>greencap</label>
+    <description>A raw greencap. Eating it makes the user faster and luckier at plant work, with a bigger harvest, but slows their walk.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_Greencap_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>5</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_Greencap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>9</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_Greencap_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>3002</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>FM_GreencapRefined</defName>
+    <label>refined greencap</label>
+    <description>A raw greencap. This refined cap has been steeped in shroom broth, which removes the downside: slower movement.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_GreencapRefined_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>5</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_GreencapRefined</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>27</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_GreencapRefined_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>FM_RefinedLabor</researchPrerequisite>
+      <workSkill>Cooking</workSkill>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
+      </recipeUsers>
+      <displayPriority>3003</displayPriority>
+    </recipeMaker>
+    <costList>
+      <FM_Greencap>1</FM_Greencap>
+      <FM_ShroomMeat>5</FM_ShroomMeat>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>3003</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="DrugPillBase">
+    <defName>FM_Packcap</defName>
+    <label>packcap</label>
+    <description>A raw packcap. Eating it greatly increases how much the user can carry, but burns food and ends in a strained crash.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_Packcap_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>5</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_Packcap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_Packcap_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>3004</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>FM_PackcapRefined</defName>
+    <label>refined packcap</label>
+    <description>A raw packcap. This refined cap has been steeped in shroom broth, which removes the downside: more hunger and a strained crash afterwards.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_PackcapRefined_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>5</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_PackcapRefined</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>30</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_PackcapRefined_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>FM_RefinedLabor</researchPrerequisite>
+      <workSkill>Cooking</workSkill>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
+      </recipeUsers>
+      <displayPriority>3005</displayPriority>
+    </recipeMaker>
+    <costList>
+      <FM_Packcap>1</FM_Packcap>
+      <FM_ShroomMeat>5</FM_ShroomMeat>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>3005</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="DrugPillBase">
+    <defName>FM_Gorecap</defName>
+    <label>gorecap</label>
+    <description>A raw gorecap. Eating it makes wounds close almost as fast as they open and nearly stops bleeding, but it fills the user with a wild bloodlust and a terrible hunger.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_Gorecap_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>5</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_Gorecap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>22</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_Gorecap_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>3006</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>FM_GorecapRefined</defName>
+    <label>refined gorecap</label>
+    <description>A raw gorecap. This refined cap has been steeped in shroom broth, which removes the downside: bloodlust (a chance of going berserk) and a ravenous hunger.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_GorecapRefined_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>5</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_GorecapRefined</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>66</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_GorecapRefined_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>FM_RefinedDeeper</researchPrerequisite>
+      <workSkill>Cooking</workSkill>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
+      </recipeUsers>
+      <displayPriority>3007</displayPriority>
+    </recipeMaker>
+    <costList>
+      <FM_Gorecap>1</FM_Gorecap>
+      <FM_ShroomMeat>5</FM_ShroomMeat>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>3007</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="DrugPillBase">
+    <defName>FM_Martyrcap</defName>
+    <label>martyrcap</label>
+    <description>A raw martyrcap. Eating it removes pain and keeps the body upright through terrible wounds, so the user fights on, but when it ends they collapse for a long time.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_Martyrcap_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>5</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_Martyrcap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>20</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_Martyrcap_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>3008</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>FM_MartyrcapRefined</defName>
+    <label>refined martyrcap</label>
+    <description>A raw martyrcap. This refined cap has been steeped in shroom broth, which removes the downside: a long collapse afterwards (very low consciousness and movement).</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_MartyrcapRefined_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>5</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_MartyrcapRefined</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>60</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_MartyrcapRefined_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>FM_RefinedDeeper</researchPrerequisite>
+      <workSkill>Cooking</workSkill>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
+      </recipeUsers>
+      <displayPriority>3009</displayPriority>
+    </recipeMaker>
+    <costList>
+      <FM_Martyrcap>1</FM_Martyrcap>
+      <FM_ShroomMeat>5</FM_ShroomMeat>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>3009</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="DrugPillBase">
+    <defName>FM_Vigilcap</defName>
+    <label>vigilcap</label>
+    <description>A raw vigilcap. Eating it keeps the user awake for days, with almost no tiredness, but brings hallucinations and a crushing burnout afterwards.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_Vigilcap_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>5</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_Vigilcap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>18</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_Vigilcap_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>3010</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>FM_VigilcapRefined</defName>
+    <label>refined vigilcap</label>
+    <description>A raw vigilcap. This refined cap has been steeped in shroom broth, which removes the downside: hallucinations (confused wandering) and a crushing burnout afterwards.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_VigilcapRefined_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>5</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_VigilcapRefined</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>54</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_VigilcapRefined_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>FM_RefinedDeeper</researchPrerequisite>
+      <workSkill>Cooking</workSkill>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
+      </recipeUsers>
+      <displayPriority>3011</displayPriority>
+    </recipeMaker>
+    <costList>
+      <FM_Vigilcap>1</FM_Vigilcap>
+      <FM_ShroomMeat>5</FM_ShroomMeat>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>3011</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>FM_WorkerPackage</defName>
+    <label>worker package</label>
+    <description>A leaf-wrapped bundle of toilcap, greencap and packcap, eaten together for a full day of hard labor. Gives the effects of every cap inside at once, in a single action. The caps keep their downsides.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_Toilcap_High</HediffDef>
+      <HediffDef>FM_Greencap_High</HediffDef>
+      <HediffDef>FM_Packcap_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>3</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_WorkerPackage</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>450</WorkToMake>
+      <MarketValue>32</MarketValue>
+      <Mass>0.03</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_Toilcap_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_Greencap_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_Packcap_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>FM_LaborFungi</researchPrerequisite>
+      <workSkill>Cooking</workSkill>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
+      </recipeUsers>
+      <displayPriority>3012</displayPriority>
+    </recipeMaker>
+    <costList>
+      <FM_Toilcap>1</FM_Toilcap>
+      <FM_Greencap>1</FM_Greencap>
+      <FM_Packcap>1</FM_Packcap>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>3012</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>FM_WorkerPackageRefined</defName>
+    <label>refined worker package</label>
+    <description>A leaf-wrapped bundle of toilcap, greencap and packcap, eaten together for a full day of hard labor. Gives the effects of every cap inside at once, in a single action. Made from refined caps, so it has no downsides.</description>
+    <descriptionHyperlinks>
+      <HediffDef>FM_ToilcapRefined_High</HediffDef>
+      <HediffDef>FM_GreencapRefined_High</HediffDef>
+      <HediffDef>FM_PackcapRefined_High</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>3</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Drug/FM_WorkerPackageRefined</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>450</WorkToMake>
+      <MarketValue>88</MarketValue>
+      <Mass>0.03</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_ToilcapRefined_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_GreencapRefined_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>FM_PackcapRefined_High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>FM_RefinedLabor</researchPrerequisite>
+      <workSkill>Cooking</workSkill>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
+      </recipeUsers>
+      <displayPriority>3013</displayPriority>
+    </recipeMaker>
+    <costList>
+      <FM_ToilcapRefined>1</FM_ToilcapRefined>
+      <FM_GreencapRefined>1</FM_GreencapRefined>
+      <FM_PackcapRefined>1</FM_PackcapRefined>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>3013</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>
