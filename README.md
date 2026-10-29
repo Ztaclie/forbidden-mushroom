@@ -13,6 +13,7 @@ A RimWorld mod that adds the **Meat Shroom**, a fungus that grows meat. Farm it 
 - **Trade**: outlander, tribal and orbital bulk goods traders and outlander base traders stock the flesh, and traders that deal in raw food buy it from you.
 - **Mycelium snare**: a one-tile hidden trap (Security tab) built from 15 meat shroom flesh. Like the spike trap it can be placed next to other traps. When stepped on it roots the victim in mycelium, which downs them so they can be captured alive.
 - Entangled victims get hungry much faster. Mycelium binds fade with time or are cut away by tending.
+- **Capture kit**: the spore blowgun (ranged) and thorn spear (melee) root targets in spore tangles instead of dealing normal damage. A few hits slow a target and then bring it down alive so it can be captured. Unlocked by the capture fungi research (Mycology tab) and made at a crafting spot.
 - **Caps for pawns**: sixteen sibling mushrooms that give a temporary effect when eaten, each with a downside (see below). They are unlocked through a Mycology research tab.
 - **Refined caps**: research lets you steep a cap in shroom broth at a stove to make a refined cap with the same benefit and no downside.
 - **Packages**: bundle each group's caps into one package that applies all of their effects in a single action, in a normal and a refined version.
@@ -43,6 +44,14 @@ A RimWorld mod that adds the **Meat Shroom**, a fungus that grows meat. Farm it 
 | Hunger per bind | +1.0 rate (stacks additively) |
 | Uses | Single use |
 
+### Capture kit
+
+| Weapon | Details |
+| --- | --- |
+| Spore blowgun | Ranged, range about 19, fast fire. Darts are never used up. Each hit plants a spore tangle (7 damage) that halves movement. Costs 20 wood and 15 meat shroom flesh. |
+| Thorn spear | Melee. Its stab has a 70% chance of an extra spore tangle. Weaker than a metal spear. Costs 40 wood and 15 meat shroom flesh. |
+| Spore tangle | Halves movement and adds a little hunger per tangle, so about four tangles bring a victim down. It fades with time or is cut away by tending. Armor can stop it. |
+
 ## Caps
 
 All caps grow in ground or hydroponics, in the dark, and yield 6 per harvest. Eat one for a temporary effect. Raw caps keep their downside; refined caps do not.
@@ -72,7 +81,8 @@ All of it is in the Mycology tab.
 
 | Project | Unlocks |
 | --- | --- |
-| Mycology | The three branches below |
+| Mycology | The branches below |
+| Capture fungi | Spore blowgun and thorn spear |
 | Combat fungi | Ragecap, ironhide cap, ghostcap, combat package |
 | Restorative fungi | Mender's bonnet, nightcap, hollowcap, recovery package |
 | Cognitive fungi | Dreamcap, sagecap, mind package |
