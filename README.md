@@ -2,7 +2,7 @@
 
 A RimWorld mod that adds the **Meat Shroom**, a fungus that grows meat. Farm it in any soil or in the dark and cook its flesh like any other raw meat, with no animals involved.
 
-**Supports RimWorld 1.7.** Made by ztac.
+**Supports RimWorld 1.6 and 1.7.** Made by ztac.
 
 ## Features
 
