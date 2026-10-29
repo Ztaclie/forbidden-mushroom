@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Damage from the capture weapons: plants a spore tangle instead of a normal wound. -->
+  <DamageDef>
+    <defName>FM_SporeTangle</defName>
+    <label>spore tangle</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} was consumed by creeping spores.</deathMessage>
+    <hediff>FM_SporeTangle</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <makesBlood>false</makesBlood>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+
+</Defs>
