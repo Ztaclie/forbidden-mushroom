@@ -1,0 +1,71 @@
+[h1]FORBIDDEN MUSHROOM[/h1]
+[i]Grow meat. Eat the forbidden. Every power has a price.[/i]
+
+One strange organism that feeds a whole colony: [b]meat without animals[/b], [b]16 caps[/b] that supercharge your pawns, and [b]traps and weapons that take enemies alive[/b]. Every cap has a downside, and research lets you refine it away.
+
+[b]No DLC needed. No other mods. Safe to add to an existing save. RimWorld 1.6 and 1.7.[/b]
+[hr][/hr]
+
+[h2]THE MEAT SHROOM[/h2]
+Grows in soil or hydroponics, in the dark, with no research. Harvest 10 meat shroom flesh every 7 days.
+[list]
+[*] A raw meat that every meat recipe accepts: meals, kibble, pemmican
+[*] Meals made with it give a small mood boost. Animals eat it. Traders stock and buy it.
+[/list]
+
+[h2]MYCELIUM SNARE[/h2]
+A hidden one-tile trap (15 flesh, no research). It roots the victim in mycelium: they go down for capture and starve much faster. Lay them side by side like caltrops.
+
+[h2]CAPTURE KIT[/h2]
+[table]
+[tr][th]Weapon[/th][th]What it does[/th][th]Cost[/th][/tr]
+[tr][td]Spore blowgun[/td][td]Ranged. Darts are never used up. Each hit plants a spore tangle that halves movement.[/td][td]20 wood, 15 flesh[/td][/tr]
+[tr][td]Thorn spear[/td][td]Melee. 70% of stabs plant a tangle. About four tangles bring a target down alive.[/td][td]40 wood, 15 flesh[/td][/tr]
+[/table]
+
+[h2]THE CAPS[/h2]
+Eat one for about a day of power. Raw caps keep the price in the last column. All grow in the dark and yield 6 per harvest.
+[table]
+[tr][th]Cap[/th][th]Group[/th][th]What it gives[/th][th]The price[/th][/tr]
+[tr][td]Ragecap[/td][td]Combat[/td][td]Faster, pain dulled, melee +25%[/td][td]Crash: weak and clumsy[/td][/tr]
+[tr][td]Ironhide cap[/td][td]Combat[/td][td]+25% sharp and blunt armor[/td][td]Slower movement[/td][/tr]
+[tr][td]Ghostcap[/td][td]Combat[/td][td]Much harder to hit in melee[/td][td]Shaky hands[/td][/tr]
+[tr][td]Mender's bonnet[/td][td]Restorative[/td][td]Wounds heal 2x, immunity 1.5x[/td][td]Much hungrier[/td][/tr]
+[tr][td]Nightcap[/td][td]Restorative[/td][td]Deep sleep, slow tiredness[/td][td]Groggy afterwards[/td][/tr]
+[tr][td]Hollowcap[/td][td]Restorative[/td][td]Hunger nearly switched off[/td][td]Dull mind, ravenous crash[/td][/tr]
+[tr][td]Dreamcap[/td][td]Cognitive[/td][td]Pain dulled, mood boost[/td][td]Mood dip afterwards[/td][/tr]
+[tr][td]Sagecap[/td][td]Cognitive[/td][td]Research +35%, learning +30%[/td][td]Tired, then a headache[/td][/tr]
+[tr][td]Toilcap[/td][td]Labor[/td][td]Work speed +30%[/td][td]Hunger and tiredness spike[/td][/tr]
+[tr][td]Greencap[/td][td]Labor[/td][td]Plant work +50%, harvest +20%[/td][td]Slower movement[/td][/tr]
+[tr][td]Packcap[/td][td]Labor[/td][td]Carry about 2.5x more[/td][td]Hunger, then a crash[/td][/tr]
+[tr][td]Rotcap[/td][td]Forbidden[/td][td]Huge speed and strength, almost no pain[/td][td]Rot grows inside you. Tend it or die.[/td][/tr]
+[tr][td]Whisper cap[/td][td]Forbidden[/td][td]Big mood boost, silver tongue[/td][td]Dark mood, berserk risk[/td][/tr]
+[tr][td]Gorecap[/td][td]Deeper forbidden[/td][td]Wounds heal 5x, bleeding nearly stops[/td][td]Bloodlust and ravenous hunger[/td][/tr]
+[tr][td]Martyrcap[/td][td]Deeper forbidden[/td][td]No pain, keeps fighting through wounds[/td][td]Long collapse afterwards[/td][/tr]
+[tr][td]Vigilcap[/td][td]Deeper forbidden[/td][td]No sleep for 3 days[/td][td]Hallucinations, then burnout[/td][/tr]
+[/table]
+
+[h2]REMOVE THE PRICE[/h2]
+[list]
+[*] [b]Refined caps[/b]: research a group, then steep a cap in shroom broth at a stove (1 cap + 5 flesh). Same benefit, no downside. The forbidden caps lose some raw power too.
+[*] [b]Packages[/b]: bundle a group's caps into one leaf-wrapped package that applies every effect in a single action. Combat, recovery, mind and worker packages, each with a refined version.
+[/list]
+
+[h2]MYCOLOGY RESEARCH TAB[/h2]
+[table]
+[tr][th]Project[/th][th]Unlocks[/th][/tr]
+[tr][td]Mycology[/td][td]Starts every branch[/td][/tr]
+[tr][td]Combat / restorative / cognitive / labor fungi[/td][td]That group's caps and package[/td][/tr]
+[tr][td]Refined versions of each[/td][td]Downside-free caps and refined packages[/td][/tr]
+[tr][td]Capture fungi[/td][td]Spore blowgun and thorn spear[/td][/tr]
+[tr][td]Forbidden fungi (needs refined combat and cognitive)[/td][td]Rotcap, whisper cap[/td][/tr]
+[tr][td]Deeper forbidden fungi (needs forbidden fungi)[/td][td]Gorecap, martyrcap, vigilcap[/td][/tr]
+[/table]
+
+[h2]GOOD TO KNOW[/h2]
+[list]
+[*] Only adds content. Adding it to an existing save is safe. To remove it, first use up or delete the plants, caps and traps.
+[*] Works with Tilled Soil and other soil mods. Rich soil makes the mushrooms grow faster.
+[*] RimWorld 1.7 is the tested version. 1.6 is listed, so please report any errors in the comments.
+[/list]
+[i]Made by ztac.[/i]
