@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ================= Spore blowgun ================= -->
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>FM_Projectile_SporeDart</defName>
+    <label>spore dart</label>
+    <graphicData>
+      <texPath>Things/Projectile/FM_SporeDart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>FM_SporeTangle</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>FM_Weapon_SporeBlowgun</defName>
+    <label>spore blowgun</label>
+    <description>A hollow reed tube loaded with thorn darts tipped with live mycelium. A hit barely wounds; instead the spores take root and slow the target. Several hits bring a target to the ground alive, ready to be captured. The darts are grown from the fungus and are never used up.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/FM_SporeBlowgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Small</soundInteract>
+    <costList>
+      <WoodLog>20</WoodLog>
+      <FM_ShroomMeat>15</FM_ShroomMeat>
+    </costList>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <Mass>0.6</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>FM_CaptureFungi</researchPrerequisite>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>520</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>FM_Projectile_SporeDart</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>18.9</range>
+        <soundCast>Bow_Small</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>tube</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <rotateInShelves>false</rotateInShelves>
+  </ThingDef>
+
+  <!-- ================= Thorn spear ================= -->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>FM_Weapon_ThornSpear</defName>
+    <label>thorn spear</label>
+    <description>A spear whose point is wrapped in thorned mycelium vine. Its stabs often plant spores that take root and slow the target, so a few good hits bring a victim down alive. Much weaker than a metal spear.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/FM_ThornSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <costList>
+      <WoodLog>40</WoodLog>
+      <FM_ShroomMeat>15</FM_ShroomMeat>
+    </costList>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>1.8</Mass>
+    </statBases>
+    <equippedAngleOffset>-25</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+      <li>
+        <label>thorned point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <armorPenetration>0.30</armorPenetration>
+        <cooldownTime>2.4</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>FM_SporeTangle</def>
+            <amount>7</amount>
+            <chance>0.7</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>FM_CaptureFungi</researchPrerequisite>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>335</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>
