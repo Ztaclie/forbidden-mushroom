@@ -13,7 +13,7 @@ A RimWorld mod that adds the **Meat Shroom**, a fungus that grows meat. Farm it 
 - **Trade**: outlander, tribal and orbital bulk goods traders and outlander base traders stock the flesh, and traders that deal in raw food buy it from you.
 - **Mycelium snare**: a one-tile hidden trap (Security tab) built from 15 meat shroom flesh. Like the spike trap it can be placed next to other traps. When stepped on it roots the victim in mycelium, which downs them so they can be captured alive.
 - Entangled victims get hungry much faster. Mycelium binds fade with time or are cut away by tending.
-- **Caps for pawns**: ten sibling mushrooms that give a temporary effect when eaten, each with a downside (see below). They are unlocked through a Mycology research tab.
+- **Caps for pawns**: sixteen sibling mushrooms that give a temporary effect when eaten, each with a downside (see below). They are unlocked through a Mycology research tab.
 - **Refined caps**: research lets you steep a cap in shroom broth at a stove to make a refined cap with the same benefit and no downside.
 - **Packages**: bundle each group's caps into one package that applies all of their effects in a single action, in a normal and a refined version.
 - The Meat Shroom, its flesh and the mycelium snare need no research and are available from the start of the game.
@@ -59,6 +59,12 @@ All caps grow in ground or hydroponics, in the dark, and yield 6 per harvest. Ea
 | Sagecap | Cognitive | Faster research and learning | Tiredness and a headache |
 | Rotcap | Forbidden | Huge speed and strength, almost no pain | Rot grows inside the user until tended, and kills if left alone |
 | Whisper cap | Forbidden | Big mood boost, much better social skills | Dark mood afterwards with a chance of berserk rage |
+| Toilcap | Labor | Faster work speed | Much higher hunger and faster tiredness |
+| Greencap | Labor | Faster plant work, bigger harvests | Slower movement |
+| Packcap | Labor | Carry about 2.5 times as much | More hunger and a strained crash |
+| Gorecap | Deeper forbidden | Wounds heal about 5 times faster, bleeding nearly stops | Bloodlust (berserk chance) and a ravenous hunger |
+| Martyrcap | Deeper forbidden | No pain, and a body that keeps fighting through wounds | A long collapse afterwards |
+| Vigilcap | Deeper forbidden | No need to sleep for about three days | Hallucinations and a crushing burnout |
 
 ### Research
 
@@ -73,6 +79,9 @@ All of it is in the Mycology tab.
 | Forbidden fungi (needs refined combat and refined cognitive fungi) | Rotcap, whisper cap |
 | Refined combat, restorative and cognitive fungi | Refined caps of that group (1 cap + 5 shroom flesh each) and the refined package |
 | Refined forbidden fungi | Refined rotcap and whisper cap. They keep a weaker form of the benefit and lose the downside. |
+| Labor fungi | Toilcap, greencap, packcap, worker package |
+| Deeper forbidden fungi (needs forbidden fungi) | Gorecap, martyrcap, vigilcap |
+| Refined labor fungi, refined deeper forbidden fungi | Refined caps of those groups and the refined worker package |
 
 Refined caps and all packages are made at a stove. A package takes one of each cap in its group. The forbidden caps have no package. Eaten raw, the rotcap rot needs a doctor, so keep medicine ready.
 
